@@ -8,13 +8,16 @@
   <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 </head>
 <body>
-  <p class="quote">Inspiring quote goes here</p>
+  
   <ul>
-    <li>Home</li>
-    <li>Posts</li>
-    <li>About</li>
-    <li>Gallery</li>
+    <li><%= link_to 'home', root_path %></li>
+    <li><%= link_to 'posts', posts_path %></li>
+    <li><%= link_to 'bookmarks', bookmarks_path %></li>
+    <li><%= link_to 'gallery', gallery_path %></li>
+    <li><%= link_to 'schedule', schedule_path %></li>
+    <li><%= link_to 'profile', profile_path %></li>
   </ul>
+  <p class="quote">Inspiring quote goes here</p>
 <%= yield %>
   <p>More Chudus...</p>
   <p>Wanna chat?</p>
