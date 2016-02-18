@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chu Du :)</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <p class="quote">Inspiring quote goes here</p>
+  <ul>
+    <li>Home</li>
+    <li>Posts</li>
+    <li>About</li>
+    <li>Gallery</li>
+  </ul>
+<%= yield %>
+  <p>More Chudus...</p>
+  <p>Wanna chat?</p>
+  <p>Facebook</p>
+  <p>Instagram</p>
+  <p>Quora</p>
+
+</body>
+</html>
